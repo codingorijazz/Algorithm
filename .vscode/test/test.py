@@ -1,7 +1,6 @@
-print('         ,r\'\"7')
-print('r`-_   ,\'  ,/')
-print(' \\. \". L_r\'')
-print('   `~\/')
-print('      |')
-print('      |')
+t = int(input())
+for i in range(t):
+    A, B = map(int,input().split())
+    print(A+B)
+
 # F5 --- 디버그
