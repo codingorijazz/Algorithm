@@ -1,5 +1,6 @@
 import sys
 
-for i in sys.stdin:
-    A, B = map(int, i.split())
+data = sys.stdin.read().splitlines()
+for line in data:
+    A, B = map(int, line.split())
     print(A+B)
