@@ -1,33 +1,11 @@
-import sys
+N = int(input()) # 숫자의 갯수
+num = list(map(int, input().split())) # 숫자 리스트
+v = int(input()) # 찾을 숫자
 
-data = sys.stdin.read().splitlines()
-for line in data:
-    a, b = map(int, line.split())
-    print(a + b)
+count = 0 # 등장 횟수를 저장할 변수
 
+for n in num: # 리스트 num을 하나씩 순회
+    if n == v: # 만약 현재 숫자가 v와 같다면
+        count += 1
 
-
-
-
-
-
-
-
-
-# import sys
-
-# for i in sys.stdin:
-#     A, B = map(int,i.split())
-#     print(A+B)
-
-
-
-
-
-
-# while True:
-#     try:
-#         A,B = map(int,input().split())
-#         print(A+B)
-#     except:
-#         break"
+print(count)
