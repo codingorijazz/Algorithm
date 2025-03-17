@@ -1,11 +1,12 @@
-N = int(input()) # 숫자의 갯수
-num = list(map(int, input().split())) # 숫자 리스트
-v = int(input()) # 찾을 숫자
-
-count = 0 # 등장 횟수를 저장할 변수
-
-for n in num: # 리스트 num을 하나씩 순회
-    if n == v: # 만약 현재 숫자가 v와 같다면
-        count += 1
-
-print(count)
+N, M = map(int, input().split()) # N, M 을 입력받음.
+A = [] # A를 빈 리스트로 초기화
+B = [] # B를 빈 리스트로 초기화
+for i in range(N): # N번 반복
+    A.append(list(map(int, input().split()))) # A에 리스트로 입력받은 값을 추가
+for i in range(N):
+    B.append(list(map(int, input().split()))) # B에 리스트로 입력받은 값을 추가
+for i in range(N):
+    C = []
+    for j in range(M): # M번 반복
+        C.append(A[i][j]+B[i][j])
+    print(*C) # 리스트 앞에 *을 달면 print를 예쁘게 할 수 있다.
