@@ -1,3 +1,1 @@
-orgin = input()
-upper = orgin.swapcase()
-print(upper)
+print(input().swapcase())
