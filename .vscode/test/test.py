@@ -1,3 +1,3 @@
-orgin = input()
-upper = orgin.swapcase()
-print(upper)
+a = int(input())
+for i in range(1, a+1):
+       print(" "*(a-i) + "*" * i)
